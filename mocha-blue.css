@@ -480,6 +480,37 @@
     .text-\[\#FFE8CD\] {
         color: var(--color-text-primary);
     }
+    
+    [title="Report this project for suspicious activity"] path {
+        fill: transparent;
+        stroke: var(--color-background);
+    }
+    
+    [title="Report this project for suspicious activity"] {
+        background: var(--primary-400);
+        color: var(--color-background);
+        transition: all 0.5s;
+    }
+    
+    [title="Report this project for suspicious activity"]:hover {
+        background: red;
+    }
+    
+    div.px-4:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(2),
+    div.px-4:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(2) {
+        background: var(--color-background);
+        color: var(--color-text-primary);
+        
+        margin-left: 8.5rem;
+        margin-top: -.0125rem;
+    }
+    
+    div.px-4:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > svg:nth-child(1) path,
+    div.px-4:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > svg:nth-child(1) path {
+        stroke: var(--color-accent);
+    }
+    
+
 }
 
 @-moz-document url-prefix("https://summer.hackclub.com/explore") {
@@ -581,7 +612,7 @@
     }
 
     #ba:hover #bt {
-        color: var(--color-text-primary);
+        color: var(--color-text-primary) !important;
     }
 
     #ba:hover * {
@@ -589,7 +620,7 @@
     }
 
     #bt {
-        color: transparent;
+        color: transparent !important;
     }
     
     button[data-action="click->devlog-card#expand"] {
