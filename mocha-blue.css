@@ -3,68 +3,98 @@
 @version    20250713.00.33
 @namespace  ?
 ==/UserStyle== */
-
 @-moz-document url-prefix("https://summer.hackclub.com/") {
     :root,
     :host {
         /* Primary Color Palette */
-        --primary-50: #f5e0dc;    /* Rosewater */
-        --primary-100: #f2cdcd;   /* Flamingo */
-        --primary-200: #f5c2e7;   /* Pink */
-        --primary-300: #cba6f7;   /* Mauve */
-        --primary-400: #f38ba8;   /* Red */
-        --primary-500: #eba0ac;   /* Maroon */
-        --primary-600: #fab387;   /* Peach */
-        --primary-700: #f9e2af;   /* Yellow */
-        --primary-800: #a6e3a1;   /* Green */
-        --primary-900: #94e2d5;   /* Teal */
-        
+        --primary-50: #f5e0dc;
+        /* Rosewater */
+        --primary-100: #f2cdcd;
+        /* Flamingo */
+        --primary-200: #f5c2e7;
+        /* Pink */
+        --primary-300: #cba6f7;
+        /* Mauve */
+        --primary-400: #f38ba8;
+        /* Red */
+        --primary-500: #eba0ac;
+        /* Maroon */
+        --primary-600: #fab387;
+        /* Peach */
+        --primary-700: #f9e2af;
+        /* Yellow */
+        --primary-800: #a6e3a1;
+        /* Green */
+        --primary-900: #94e2d5;
+        /* Teal */
         /* Secondary Color Palette */
-        --secondary-50: #89dceb;   /* Sky */
-        --secondary-100: #74c7ec;  /* Sapphire */
-        --secondary-200: #89b4fa;  /* Blue */
-        --secondary-300: #8aadf4;  /* Sapphire Alt */
-        --secondary-400: #b4befe;  /* Lavender */
-        --secondary-500: #cba6f7;  /* Mauve */
-        --secondary-600: #7f849c;  /* Overlay 1 */
-        --secondary-700: #6c7086;  /* Overlay 0 */
-        --secondary-800: #585b70;  /* Surface 2 */
-        --secondary-900: #45475a;  /* Surface 1 */
-        
+        --secondary-50: #89dceb;
+        /* Sky */
+        --secondary-100: #74c7ec;
+        /* Sapphire */
+        --secondary-200: #89b4fa;
+        /* Blue */
+        --secondary-300: #8aadf4;
+        /* Sapphire Alt */
+        --secondary-400: #b4befe;
+        /* Lavender */
+        --secondary-500: #cba6f7;
+        /* Mauve */
+        --secondary-600: #7f849c;
+        /* Overlay 1 */
+        --secondary-700: #6c7086;
+        /* Overlay 0 */
+        --secondary-800: #585b70;
+        /* Surface 2 */
+        --secondary-900: #45475a;
+        /* Surface 1 */
         /* Neutral/Gray Scale */
-        --neutral-50: #1e1e2e;    /* Base */
-        --neutral-100: #181825;   /* Mantle */
-        --neutral-200: #11111b;   /* Crust */
-        --neutral-300: #313244;   /* Surface 0 */
-        --neutral-400: #45475a;   /* Surface 1 */
-        --neutral-500: #585b70;   /* Surface 2 */
-        --neutral-600: #6c7086;   /* Overlay 0 */
-        --neutral-700: #7f849c;   /* Overlay 1 */
-        --neutral-800: #9399b2;   /* Overlay 2 */
-        --neutral-900: #cdd6f4;   /* Text */
-        
+        --neutral-50: #1e1e2e;
+        /* Base */
+        --neutral-100: #181825;
+        /* Mantle */
+        --neutral-200: #11111b;
+        /* Crust */
+        --neutral-300: #313244;
+        /* Surface 0 */
+        --neutral-400: #45475a;
+        /* Surface 1 */
+        --neutral-500: #585b70;
+        /* Surface 2 */
+        --neutral-600: #6c7086;
+        /* Overlay 0 */
+        --neutral-700: #7f849c;
+        /* Overlay 1 */
+        --neutral-800: #9399b2;
+        /* Overlay 2 */
+        --neutral-900: #cdd6f4;
+        /* Text */
         /* Semantic Colors */
-        --color-success: var(--primary-800);    /* Green */
-        --color-warning: var(--primary-700);    /* Yellow */
-        --color-error: var(--primary-400);      /* Red */
-        --color-info: var(--secondary-200);     /* Blue */
-        
+        --color-success: var(--primary-800);
+        /* Green */
+        --color-warning: var(--primary-700);
+        /* Yellow */
+        --color-error: var(--primary-400);
+        /* Red */
+        --color-info: var(--secondary-200);
+        /* Blue */
         /* Layout Colors */
         --color-background: var(--neutral-50);
         --color-surface: var(--neutral-300);
         --color-sidebar: var(--neutral-300);
-        --color-accent: var(--secondary-300);   /* Blue - main accent */
+        --color-accent: var(--secondary-300);
+        /* Blue - main accent */
         --color-text-primary: var(--neutral-900);
         --color-text-secondary: var(--neutral-800);
         --color-text-muted: var(--neutral-600);
         --color-border: var(--color-accent);
-        
+
         /* Opacity variants */
         --surface-opacity-75: color-mix(in srgb, var(--color-surface) 75%, transparent);
         --accent-opacity-15: color-mix(in srgb, var(--color-accent) 15%, transparent);
         --accent-opacity-40: color-mix(in srgb, var(--color-accent) 40%, transparent);
         --accent-opacity-50: color-mix(in srgb, var(--color-accent) 50%, transparent);
-        
+
         /* Legacy color mappings for backward compatibility */
         --color-red-50: var(--primary-50);
         --color-red-100: var(--primary-100);
@@ -74,7 +104,7 @@
         --color-red-600: var(--primary-500);
         --color-red-700: var(--primary-600);
         --color-red-800: var(--primary-700);
-        
+
         --color-orange-50: var(--primary-50);
         --color-orange-100: var(--primary-600);
         --color-orange-400: var(--primary-700);
@@ -82,14 +112,14 @@
         --color-orange-600: var(--primary-500);
         --color-orange-700: var(--primary-300);
         --color-orange-800: var(--secondary-600);
-        
+
         --color-amber-50: var(--primary-50);
         --color-amber-200: var(--primary-700);
         --color-amber-500: var(--primary-600);
         --color-amber-600: var(--primary-800);
         --color-amber-700: var(--primary-900);
         --color-amber-800: var(--secondary-50);
-        
+
         --color-yellow-50: var(--primary-50);
         --color-yellow-100: var(--primary-700);
         --color-yellow-200: var(--primary-600);
@@ -97,7 +127,7 @@
         --color-yellow-600: var(--primary-800);
         --color-yellow-700: var(--primary-900);
         --color-yellow-800: var(--secondary-100);
-        
+
         --color-green-50: var(--primary-50);
         --color-green-100: var(--primary-800);
         --color-green-200: var(--primary-900);
@@ -105,7 +135,7 @@
         --color-green-600: var(--primary-900);
         --color-green-700: var(--secondary-50);
         --color-green-800: var(--secondary-100);
-        
+
         --color-blue-50: var(--primary-50);
         --color-blue-100: var(--secondary-50);
         --color-blue-200: var(--secondary-100);
@@ -115,14 +145,14 @@
         --color-blue-600: var(--secondary-300);
         --color-blue-700: var(--secondary-300);
         --color-blue-800: var(--secondary-300);
-        
+
         --color-purple-50: var(--primary-300);
         --color-purple-100: var(--secondary-400);
         --color-purple-500: var(--primary-300);
         --color-purple-600: var(--secondary-400);
         --color-purple-700: var(--secondary-600);
         --color-purple-800: var(--secondary-700);
-        
+
         --color-gray-50: var(--neutral-50);
         --color-gray-100: var(--neutral-100);
         --color-gray-200: var(--neutral-200);
@@ -133,9 +163,9 @@
         --color-gray-700: var(--neutral-700);
         --color-gray-800: var(--neutral-800);
         --color-gray-900: var(--neutral-900);
-        
+
         --color-gray-300-75: var(--surface-opacity-75);
-        
+
         /* Component-specific variables */
         --card-background: var(--color-surface);
         --card-border: var(--color-border);
@@ -146,10 +176,10 @@
         --border-radius-card: 2rem;
         --border-radius-button: 1rem;
         --border-width-card: 4px;
-        
+
         --color-saddle-taupe: var(--color-accent);
         --color-forest: color-mix(in srgb, var(--primary-800) 50%, transparent);
-        
+
         /* Filter for icon color changes - needs to be updated when accent changes */
         --icon-filter-accent: brightness(0) saturate(100%) invert(61%) sepia(69%) saturate(474%) hue-rotate(189deg) brightness(103%) contrast(96%);
     }
@@ -157,14 +187,18 @@
     /* Base Typography */
     body,
     .prose,
-    h1, h2, h3, h4, h5,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
     p,
     select,
     [class*="card-"] > div:first-child > div:first-child > div:first-child,
     .text-gray-600 {
         color: var(--color-text-primary) !important;
     }
-    
+
     .text-saddle-taupe {
         color: var(--color-accent);
     }
@@ -309,8 +343,8 @@
         fill: var(--color-accent);
         stroke: var(--color-accent);
     }
-    
-    
+
+
     [data-action="undo"]:hover,
     [data-action="redo"]:hover,
     [data-action="bold"]:hover,
@@ -324,21 +358,21 @@
         background: var(--accent-opacity-15);
     }
 
-  
+
     /* Sidebar Pin Icon */
     [data-sidebar-target="pinIcon"] path {
         fill: var(--color-accent);
     }
-    
+
     [data-sidebar-target="pinButton"]:hover > svg {
         opacity: 100;
     }
-    
+
     /* Sidebar Pin Icon Hover Background */
     [data-sidebar-target="pinButton"]:hover {
         background: var(--accent-opacity-15);
     }
-    
+
     /* Form Inputs */
     [name="commit"] {
         cursor: pointer;
@@ -388,51 +422,51 @@
     }
 }
 @-moz-document url-prefix("https://summer.hackclub.com/campfire") {
-    .text-\[\#E65A42\], .text-blue-500.hover\:text-blue-700.underline {
+    .text-\[\#E65A42\],
+    .text-blue-500.hover\:text-blue-700.underline {
         color: var(--color-accent);
     }
-    
+
     .bg-blue-500 {
         background: var(--color-accent);
     }
-input[type="checkbox"] {
-  appearance: none;
-  width: 1.5em; /* ≈ 24px */
-  height: 1.5em;
-  border: 2px solid var(--color-accent);
-  border-radius: 0.25em;
-  background-color: var(--color-disabled-bg, #e0e0e0);
-  position: relative;
-  cursor: not-allowed;
-  display: inline-block;
-}
+    input[type="checkbox"] {
+        appearance: none;
+        width: 1.5em;
+        /* ≈ 24px */
+        height: 1.5em;
+        border: 2px solid var(--color-accent);
+        border-radius: 0.25em;
+        background-color: var(--color-disabled-bg, #e0e0e0);
+        position: relative;
+        cursor: not-allowed;
+        display: inline-block;
+    }
 
-input[type="checkbox"]:checked {
-  background-color: var(--color-accent);
-}
+    input[type="checkbox"]:checked {
+        background-color: var(--color-accent);
+    }
 
-input[type="checkbox"]::after {
-  content: "";
-  position: absolute;
-  top: 0.25em;
-  left: 0.5em;
-  width: 0.3em;
-  height: 0.7em;
-  border: solid var(--color-text-primary);
-  border-width: 0 0.2em 0.2em 0;
-  transform: rotate(45deg);
-  display: none;
-}
+    input[type="checkbox"]::after {
+        content: "";
+        position: absolute;
+        top: 0.25em;
+        left: 0.5em;
+        width: 0.3em;
+        height: 0.7em;
+        border: solid var(--color-text-primary);
+        border-width: 0 0.2em 0.2em 0;
+        transform: rotate(45deg);
+        display: none;
+    }
 
-input[type="checkbox"]:checked::after {
-  display: block;
-}
+    input[type="checkbox"]:checked::after {
+        display: block;
+    }
 
-input[type="checkbox"]:disabled {
-  pointer-events: none;
-}
-
-
+    input[type="checkbox"]:disabled {
+        pointer-events: none;
+    }
 }
 @-moz-document url-prefix("https://summer.hackclub.com/shop") {
     [class*="card-"] > div:first-child > div:first-child > div:first-child {
@@ -443,11 +477,45 @@ input[type="checkbox"]:disabled {
         background: var(--color-surface);
     }
 }
+@-moz-document url-prefix("https://summer.hackclub.com/shop/orders") {
+    div.bg-soft-bone,
+    .mt-8 {
+        background: var(--color-sidebar) !important;
+    }
+
+    .text-green-800 {
+        color: var(--color-background);
+    }
+
+    .bg-soft-bone {
+        background: var(--color-sidebar);
+        border-color: var(--color-accent);
+    }
+
+    .bg-soft-bone:hover {
+        background: var(--color-background);
+    }
+
+    .bg-white {
+        background: var(--color-sidebar);
+        box-shadow: none !important;
+        border-style: solid;
+        border-width: var(--border-width-card);
+        border-color: var(--color-accent);
+    }
+
+    .w-32 {
+        box-shadow: none !important;
+        border-style: solid;
+        border-width: var(--border-width-card);
+        border-color: var(--color-accent);
+    }
+}
 @-moz-document url-prefix("https://summer.hackclub.com/votes") {
     .bg-\[\#F6DBBA\] {
         background: var(--neutral-300);
     }
-    
+
     .bg-\[\#FFE8CD\] {
         background: var(--neutral-50);
         color: var(--color-text-primary);
@@ -470,8 +538,8 @@ input[type="checkbox"]:disabled {
     path {
         fill: var(--color-sidebar);
     }
-    
-    .report-card-modal  {
+
+    .report-card-modal {
         border: 2px solid var(--color-accent) !important;
         box-shadow: none;
         border-radius: 1.125em !important;
@@ -479,16 +547,16 @@ input[type="checkbox"]:disabled {
         background-image: none;
         color: var(--color-text-primary) !important;
     }
-    
+
     .report-card-modal > form span {
         color: var(--color-text-secondary) !important;
     }
-    
+
     /* Used by AI ticker */
     div.px-4 > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > svg:nth-child(1) > g:nth-child(1) {
         stroke: var(--color-accent);
     }
-    
+
     .bg-\[\#4A2D24\],
     .sm\:p-2 {
         background: var(--color-sidebar);
@@ -497,13 +565,9 @@ input[type="checkbox"]:disabled {
     .bg-\[\#F3ECD8\] {
         background: var(--neutral-200);
     }
-    
+
     button[title="Report this project for suspicious activity"] {
         background: var(--primary-400);
-    }
-    
-    button[title="Report this project for suspicious activity"] > svg > path {
-        stroke: var(--color-text-primary);
     }
 
     .bg-\[\#F3ECD8\] div {
@@ -526,37 +590,35 @@ input[type="checkbox"]:disabled {
     .text-\[\#FFE8CD\] {
         color: var(--color-text-primary);
     }
-    
+
     [title="Report this project for suspicious activity"] path {
         fill: transparent;
         stroke: var(--color-background);
     }
-    
+
     [title="Report this project for suspicious activity"] {
         background: var(--primary-400);
         color: var(--color-background);
         transition: all 0.5s;
     }
-    
+
     [title="Report this project for suspicious activity"]:hover {
         background: red;
     }
-    
+
     div.px-4:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(2),
     div.px-4:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(2) {
         background: var(--color-background);
         color: var(--color-text-primary);
-        
+
         margin-left: 8.5rem;
         margin-top: -.0125rem;
     }
-    
+
     div.px-4:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > svg:nth-child(1) path,
     div.px-4:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(1) > svg:nth-child(1) path {
         stroke: var(--color-accent);
     }
-    
-
 }
 
 @-moz-document url-prefix("https://summer.hackclub.com/explore") {
@@ -582,7 +644,7 @@ input[type="checkbox"]:disabled {
     .text-\[\#4a2d24\] {
         color: var(--color-text-primary);
     }
-    
+
     .text-\[\#4a2d24\]:nth-child(2),
     .text-\[\#4a2d24\] button,
     .text-\[\#4a2d24\] path {
@@ -639,7 +701,7 @@ input[type="checkbox"]:disabled {
     [data-sidebar-target="links"] path {
         fill: var(--color-accent);
     }
-    
+
     .btn-pixel {
         border-radius: var(--border-radius-button);
         box-shadow: none;
@@ -668,7 +730,7 @@ input[type="checkbox"]:disabled {
     #bt {
         color: transparent !important;
     }
-    
+
     button[data-action="click->devlog-card#expand"] {
         color: var(--color-accent) !important;
     }
@@ -676,7 +738,7 @@ input[type="checkbox"]:disabled {
     .text-\[\#4a2d24\] {
         color: var(--color-text-primary);
     }
-    
+
     .text-\[\#4a2d24\]:nth-child(2),
     .text-\[\#4a2d24\] button,
     .text-\[\#4a2d24\] {
@@ -716,23 +778,50 @@ input[type="checkbox"]:disabled {
 }
 
 @-moz-document url-prefix("https://summer.hackclub.com/shop/items") {
-    .bg-soft-bone, .bg-white {
+    .bg-soft-bone,
+    .bg-white {
         background: var(--color-surface);
     }
-    
+
     span.text-2xl:nth-child(2) {
         gap: 4px;
     }
-    
+
     span.ml-2 {
         display: flex;
         align-items: center;
         gap: 4px;
     }
-    
+
     span.inline-flex.items-center.rounded-full.text-xs.font-medium.bg-blue-100.text-blue-800.mt-1 {
         color: var(--color-text-primary);
         background: none;
         border: 2px solid var(--color-accent);
+    }
+}
+@-moz-document url-prefix("https://summer.hackclub.com/users") {
+    .text-\[\#B89576\] {
+        color: var(--color-text-secondary)
+    }
+
+    .text-\[\#865c39\] {
+        color: var(--color-accent);
+    }
+
+    .text-\[\#4a2d24\] {
+        color: var(--color-text)
+    }
+
+    [clip-path="url(#clip0_35_306)"] path {
+        color: var(--color-warning);
+        fill: currentColor;
+    }
+
+    .text-green-800 {
+        color: var(--color-background);
+    }
+
+    .text-gray-500 {
+        color: var(--color-accent);
     }
 }
