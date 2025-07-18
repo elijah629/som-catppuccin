@@ -825,3 +825,13 @@
         color: var(--color-accent);
     }
 }
+
+@-moz-document url-prefix("https://summer.hackclub.com/map") {
+    .bottom-4 {
+        background: var(--color-background);
+        border-color: var(--color-accent);
+        box-shadow: none;
+        border-style: solid;
+        border-width: var(--border-width);
+    }
+}
