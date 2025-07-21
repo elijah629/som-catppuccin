@@ -156,8 +156,8 @@
         --color-saddle-taupe: var(--color-accent);
         --color-dark-blue: #41a4e6;
 
-        --color-accent: var(--secondary-300);
-
+        --surface-opacity-75: color-mix(in srgb, var(--color-surface) 75%, transparent);
+        
         --filter-into-accent: brightness(0) saturate(100%) invert(61%) sepia(69%) saturate(474%) hue-rotate(189deg) brightness(103%) contrast(96%);
     }
 
@@ -241,7 +241,7 @@
     }
 
     /* Sidebar SHULKKKHHLLL EMOJIIIII */
-    div.bg-linear-to-b.from-\[\#E6D4BE\].to-\[\#F6DBBA\] {
+     div.bg-linear-to-b.from-\[\#E6D4BE\].to-\[\#F6DBBA\] {
         background: var(--color-surface);
         padding: calc(var(--spacing)*5);
         border: 2px solid var(--color-accent);
@@ -264,7 +264,8 @@
 
     button.relative:nth-child(2) > span:nth-child(1) > svg:nth-child(1) > g:nth-child(1) > path:nth-child(1) {
         fill: var(--primary-500);
-    }
+    } 
+
 
 
     /* Checkboxes */
@@ -374,6 +375,26 @@
     img[src="/assets/timeline-stalk-99d5587f.svg"] {
         filter: var(--filter-into-accent);
     }
+    
+    .from-\[\#F3ECD8\] {
+        --tw-gradient-from: var(--color-surface);
+    }
+
+    #ba:hover > #bh {
+        background: var(--surface-opacity-75);
+    }
+
+    #ba:hover #bt {
+        color: var(--color-text-primary) !important;
+    }
+
+    #ba:hover * {
+        cursor: pointer;
+    }
+
+    #bt {
+        color: transparent !important;
+    }
 }
 
 @-moz-document url-prefix("https://summer.hackclub.com/explore") {
@@ -408,11 +429,35 @@
     div.mx-2:nth-child(2) > div > div:nth-child(2) > div:last-child {
         display: none;
     }
+    
+    div.px-4:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(2),
+    div.px-4:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > span:nth-child(2) {
+        margin-bottom: 0.5rem;
+        margin-left: 8.5rem;
+    }
 }
 
 @-moz-document url-prefix("https://summer.hackclub.com/shop") {
     button[id="music-toggle"] {
         display: none;
+    }
+}
+@-moz-document url-prefix("https://summer.hackclub.com/shop/orders") {
+    .text-green-800 {
+        color: var(--color-background);
+    }
+    
+    .bg-white {
+        background: var(--color-sidebar);
+        box-shadow: none;
+        border-color: var(--color-accent);
+        border-width: 2px;
+    }
+    
+    .w-32 {
+        box-shadow: none;
+        border-color: var(--color-accent);
+        border-width: 2px;
     }
 }
 
@@ -421,5 +466,10 @@
         box-shadow: none;
         border-width: 2px;
         border-radius: var(--radius-2xl);
+    }
+}
+@-moz-document url-prefix("https://summer.hackclub.com/users") {
+    .text-green-800 {
+        color: var(--color-background);
     }
 }
